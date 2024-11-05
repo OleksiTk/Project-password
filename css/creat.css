@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+/*----------------------------------------------------------------------*/
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+/*----------------------------------------------------------------------*/
+.creat__button-back {
+  position: absolute;
+  top: 10px;
+  left: 20;
+}
+.creat__copy {
+  justify-content: flex-end;
+  padding-left: 30px;
+}
+.creat__button-back a {
+  padding-left: 30px;
+  font-size: 50px;
+}
+.creat__container {
+  padding-top: 200px;
+}
+.creat__password {
+  font-family: Itim;
+  font-size: 22px;
+  padding: 50px 75px 50px 75px;
+  color: antiquewhite;
+  background-color: aqua;
+}
+.creat__button {
+  font-family: Itim;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.creat__input {
+  display: flex;
+  padding-top: 100px;
+}
+
+.creat__b {
+  padding-top: 100px;
+  padding-left: 125px;
+}
