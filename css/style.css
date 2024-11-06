@@ -110,8 +110,8 @@ body {
   background-repeat: no-repeat;
 }
 .animation {
-  margin: 50px 0px 0px 0px;
-  padding: 200px 0px 0px 0px;
+  margin: 5% 0% 0% 0%;
+  padding: 10% 0% 0% 0%;
   float: left;
   width: auto;
   transform: rotate(21deg);
@@ -148,7 +148,7 @@ body {
 
 .typity {
   width: 1170px;
-  padding-left: 800px;
+  padding-left: 42%;
   background-position: 0% 100%;
   box-sizing: border-box;
   color: #363636;
@@ -206,7 +206,7 @@ body {
 }
 
 header {
-  padding-left: 1750px;
+  padding-left: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
