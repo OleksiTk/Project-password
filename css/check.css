@@ -70,7 +70,7 @@ button {
   left: 20;
 }
 .check_grade {
-  padding-left: 150px;
+  padding-left: 140px;
   font-family: Oxygen;
   font-size: 45px;
 }
@@ -81,11 +81,10 @@ button {
 .check__container {
   padding-top: 100px;
 }
-.check_grade {
-}
+
 .checkgif {
   padding-top: 20px;
-  padding-left: 140px;
+  padding-left: 130px;
 }
 .check__password {
   border-radius: 60px;

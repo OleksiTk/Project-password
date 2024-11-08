@@ -79,6 +79,7 @@ function Check() {
   Allcheck(lettersEN, password);
   Allcheck(lettersUA, password);
   lengthPassword(password);
+  secret(password);
   grade.innerHTML = percentage;
 }
 
@@ -99,5 +100,17 @@ function lengthPassword(password) {
   if (password.length >= 10) {
     percentage++;
     console.log(percentage); // Збільшує процент за довжину пароля
+  }
+}
+
+function secret(sec) {
+  if (sec[0] == "*") {
+    if (sec[5] == "*") {
+      if (sec[10] == "*") {
+        if (sec.length >= 10) {
+          percentage = 100;
+        }
+      }
+    }
   }
 }

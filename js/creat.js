@@ -18,7 +18,7 @@ function CreatP() {
 
 function getRandomCharacter() {
   const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*_+-=;:,.?";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzЙЦУКЕНГШЩЗХЇФІВАПРОЛДЖЄЯЧСМИТЬБЮйцукенгшщзхїфівапролджєячсмитьбю0123456789!@#$%^&*_+-=;:,.?";
   const randomIndex = Math.floor(Math.random() * characters.length);
   password += characters[randomIndex];
 }
