@@ -62,20 +62,42 @@ themeToggleButton.addEventListener("change", toggleTheme);
 
 let input2 = document.getElementsByClassName("check__password")[0];
 let button = document.getElementsByClassName("check__button")[0];
-
 let number = "1234567890";
-
-button.addEventListener("click", firstCheck);
-
-function firstCheck() {
-  let count = 0;
+let symbol = "'\"<>/?,.;:[]\\{}+-=)(*&^%$#@!";
+let lettersEN = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+let lettersUA =
+  "ЙЦУКЕНГШЩЗХЇФІВАПРОЛДЖЄЯЧСМИТЬБЮйцукенгшщзхїфівапролджєячсмитьбю";
+let percentage = 0;
+button.addEventListener("click", Check);
+let grade = document.getElementsByClassName("Grade")[0];
+function Check() {
+  // Оновлюємо значення пароля при кожному кліку
   let password = input2.value;
+  percentage = 0; // Очищаємо попередній результат перед новою перевіркою
+  Allcheck(number, password);
+  Allcheck(symbol, password);
+  Allcheck(lettersEN, password);
+  Allcheck(lettersUA, password);
+  lengthPassword(password);
+  grade.innerHTML = percentage;
+}
+
+function Allcheck(chars, password) {
   for (let i = 0; i < password.length; i++) {
-    // Перевіряємо, чи є цей символ у наборі цифр
-    if (number.includes(password[i])) {
-      count++; // Якщо є цифра, збільшуємо лічильник
+    for (let j = 0; j < chars.length; j++) {
+      if (password[i] == chars[j]) {
+        percentage++;
+        console.log(percentage); // Додає до проценту і виводить
+        return; // Зупиняє виконання після першого збігу
+      }
     }
   }
+}
 
-  console.log(count); // Виводимо кількість цифр
+function lengthPassword(password) {
+  // Перевірка довжини пароля
+  if (password.length >= 10) {
+    percentage++;
+    console.log(percentage); // Збільшує процент за довжину пароля
+  }
 }

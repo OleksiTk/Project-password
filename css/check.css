@@ -69,7 +69,11 @@ button {
   top: 10px;
   left: 20;
 }
-
+.check_grade {
+  padding-left: 150px;
+  font-family: Oxygen;
+  font-size: 45px;
+}
 .creat__button-back a {
   padding-left: 30px;
   font-size: 50px;
@@ -79,16 +83,20 @@ button {
 }
 .check_grade {
 }
+.checkgif {
+  padding-top: 20px;
+  padding-left: 140px;
+}
 .check__password {
   border-radius: 60px;
-  font-family: Itim;
+  font-family: Oxygen;
   font-size: 22px;
   color: #1d1b1c;
   padding: 50px 75px 50px 75px;
   background-color: #f8fdcf;
 }
 .check__button {
-  font-family: Itim;
+  font-family: Oxygen;
   font-size: 25px;
   padding: 20px 40px 20px 40px;
   border-radius: 60px;
@@ -98,13 +106,12 @@ button {
 
 .check__input {
   display: flex;
-
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .check__b {
   padding-top: 100px;
-  padding-left: 83px;
+  padding-left: 70px;
 }
 /*----------------------------------------------------------------*/
 
