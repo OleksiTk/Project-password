@@ -144,6 +144,12 @@ body {
     transform: translateZ(0px) translateY(0px) translateX(0px) skewY(0deg);
   }
 }
+@media (max-width: 1440px) {
+  .animation {
+    display: none;
+  }
+}
+
 /*----------------------------------------------------------------*/
 
 .typity {
@@ -201,8 +207,15 @@ body {
 }
 
 /*----------------------------------------------------------------*/
-body {
+body.light-theme {
+  background-color: #78c1f3;
+  color: #363636;
+}
+
+/* Темна тема */
+body.dark-theme {
   background-color: #3c4145;
+  color: white;
 }
 
 header {

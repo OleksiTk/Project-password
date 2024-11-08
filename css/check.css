@@ -1,0 +1,283 @@
+/* Загальні стилі */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+/*----------------------------------------------------------------*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------*/
+
+.creat__button-back {
+  position: absolute;
+  top: 10px;
+  left: 20;
+}
+
+.creat__button-back a {
+  padding-left: 30px;
+  font-size: 50px;
+}
+.check__container {
+  padding-top: 100px;
+}
+.check_grade {
+}
+.check__password {
+  border-radius: 60px;
+  font-family: Itim;
+  font-size: 22px;
+  color: #1d1b1c;
+  padding: 50px 75px 50px 75px;
+  background-color: #f8fdcf;
+}
+.check__button {
+  font-family: Itim;
+  font-size: 25px;
+  padding: 20px 40px 20px 40px;
+  border-radius: 60px;
+  background-color: #f8fdcf;
+  color: black;
+}
+
+.check__input {
+  display: flex;
+
+  padding-top: 100px;
+}
+
+.check__b {
+  padding-top: 100px;
+  padding-left: 83px;
+}
+/*----------------------------------------------------------------*/
+
+body.light-theme {
+  background-color: #78c1f3;
+  color: #363636;
+}
+
+/* Темна тема */
+body.dark-theme {
+  background-color: #3c4145;
+  color: white;
+}
+
+header {
+  padding-left: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.switch-theme {
+  position: relative;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(0.4);
+  margin-top: 50px;
+}
+
+.switch-theme__input {
+  outline: none;
+  background-color: #3c4145;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 100px;
+  width: 200px;
+  border-radius: 100px;
+  border: #1d1b1c solid 10px;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.switch-theme__input:checked {
+  background-color: #9fe2fc;
+  border-color: #84c1d4;
+}
+.switch-theme__switch {
+  pointer-events: none;
+  height: 74px;
+  position: absolute;
+  width: 74px;
+  top: 50%;
+  margin-top: -39px;
+  left: 16px;
+  background-color: #fff;
+  border-radius: 70px;
+  border: #e3e5c4 8px solid;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.switch-theme__input:checked ~ .switch-theme__switch {
+  background-color: #ffdf6e;
+  border-color: #e1c349;
+  left: 114px;
+}
+.switch-theme__sub {
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  background-color: #fff;
+  left: 100px;
+  border-radius: 100px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  pointer-events: none;
+}
+.switch-theme__input:checked ~ .switch-theme__sub {
+  opacity: 0;
+  -webkit-transform: translatex(50px);
+  -ms-transform: translatex(50px);
+  transform: translatex(50px);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.switch-theme__switch-sub {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  border-radius: 14px;
+  border: #e3e3c7 solid 6px;
+  background-color: #fff;
+}
+
+.switch-theme__input:checked ~ .switch-theme__switch .switch-theme__switch-sub {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.switch-theme__cloud-icon {
+  fill: none;
+  stroke: none;
+  left: -60px;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.switch-theme__input:checked ~ .switch-theme__switch .switch-theme__cloud-icon {
+  position: absolute;
+  fill: #fff;
+  stroke: #d3d3d4;
+  stroke-width: 5px;
+  left: -30px;
+  top: 20px;
+}
+
+.switch-theme__switch-sub:nth-child(1) {
+  top: 5px;
+  left: 4px;
+}
+.switch-theme__switch-sub:nth-child(2) {
+  top: 2px;
+  left: 36px;
+  height: 8px;
+  width: 8px;
+}
+.switch-theme__switch-sub:nth-child(3) {
+  top: 44px;
+  left: 26px;
+  height: 4px;
+  width: 4px;
+}
+.switch-theme__sub:nth-child(3) {
+  top: 50px;
+  left: 135px;
+  height: 7px;
+  width: 7px;
+}
+.switch-theme__sub:nth-child(4) {
+  top: 41px;
+  left: 176px;
+  height: 5px;
+  width: 5px;
+}
+.switch-theme__sub:nth-child(5) {
+  top: 30px;
+  left: 127px;
+}
+.switch-theme__sub:nth-child(6) {
+  top: 60px;
+  left: 163px;
+  height: 8px;
+  width: 8px;
+}
+.switch-theme__sub:nth-child(7) {
+  top: 72px;
+  left: 111px;
+}
+.switch-theme__sub:nth-child(8) {
+  top: 76px;
+  left: 150px;
+  height: 6px;
+  width: 6px;
+}

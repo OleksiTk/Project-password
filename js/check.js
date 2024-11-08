@@ -58,42 +58,24 @@ document.addEventListener("DOMContentLoaded", () => {
 // Прив'язуємо перемикач до чекбокса
 const themeToggleButton = document.getElementById("theme-switch");
 themeToggleButton.addEventListener("change", toggleTheme);
-/*------------------------Text------------------------------*/
+/*------------------------Check------------------------------*/
 
-let typed = "";
-const element = document.querySelector(".typity");
+let input2 = document.getElementsByClassName("check__password")[0];
+let button = document.getElementsByClassName("check__button")[0];
 
-function startType(pun, index) {
-  if (index < pun.length) {
-    typed += pun.charAt(index);
-    element.innerHTML = typed;
-    index++;
-    setTimeout(function () {
-      startType(pun, index);
-    }, 50);
-  } else {
-    setTimeout(function () {
-      element.classList.add("highlight");
-    }, 4000);
+let number = "1234567890";
 
-    setTimeout(function () {
-      element.classList.remove("highlight");
-      typed = "";
-      element.innerHTML = typed;
-      startType(getRandomPun(), 0);
-    }, 5000);
+button.addEventListener("click", firstCheck);
+
+function firstCheck() {
+  let count = 0;
+  let password = input2.value;
+  for (let i = 0; i < password.length; i++) {
+    // Перевіряємо, чи є цей символ у наборі цифр
+    if (number.includes(password[i])) {
+      count++; // Якщо є цифра, збільшуємо лічильник
+    }
   }
+
+  console.log(count); // Виводимо кількість цифр
 }
-
-function getRandomPun() {
-  const puns = [
-    "And create",
-    "Come to this website.",
-    "You want creat a password .",
-  ];
-  const index = Math.floor(Math.random() * puns.length);
-
-  return puns[index];
-}
-
-startType(getRandomPun(), 0);
