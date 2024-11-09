@@ -92,14 +92,14 @@ button {
   font-size: 22px;
   color: #1d1b1c;
   padding: 50px 75px 50px 75px;
-  background-color: #f8fdcf;
+  background-color: rgb(159, 219, 253);
 }
 .check__button {
   font-family: Oxygen;
   font-size: 25px;
   padding: 20px 40px 20px 40px;
   border-radius: 60px;
-  background-color: #f8fdcf;
+  background-color: rgb(159, 219, 253);
   color: black;
 }
 
@@ -115,6 +115,8 @@ button {
 /*----------------------------------------------------------------*/
 
 body.light-theme {
+  background-size: cover;
+  background-image: url("/img/image_2024-11-09_12-05-12.png");
   background-color: #78c1f3;
   color: #363636;
 }

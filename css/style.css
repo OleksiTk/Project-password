@@ -80,7 +80,7 @@ button {
   font-family: Itim;
   color: rgb(0, 5, 10);
   font-size: 25px;
-  background-color: #f8fdcf;
+  background-color: rgb(159, 219, 253);
   padding: 25px 75px 25px 75px;
   border-radius: 60px;
 }
@@ -93,7 +93,7 @@ button {
   font-family: Itim;
   color: rgb(0, 0, 0);
   font-size: 25px;
-  background-color: #f8fdcf;
+  background-color: rgb(159, 219, 253);
   padding: 25px 75px 25px 75px;
   border-radius: 60px;
 }
@@ -157,7 +157,7 @@ body {
   padding-left: 42%;
   background-position: 0% 100%;
   box-sizing: border-box;
-  color: #363636;
+  color: #fffcfc;
   font-size: 2rem;
   padding-right: 2px;
   position: relative;
@@ -208,8 +208,9 @@ body {
 
 /*----------------------------------------------------------------*/
 body.light-theme {
+  background-image: url("/img/image_2024-11-09_12-05-12.png");
   background-color: #78c1f3;
-  color: #363636;
+  color: #ffffff;
 }
 
 /* Темна тема */

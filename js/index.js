@@ -4,10 +4,9 @@ let text = document.querySelector(".typity");
 input.onchange = () => {
   if (input.checked) {
     document.body.style.backgroundColor = "#78C1F3";
-    text.style.color = "#363636";
+    text.style.color = "#fff";
   } else {
     document.body.style.backgroundColor = "#3c4145";
-    text.style.color = "white";
   }
 };
 
